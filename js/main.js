@@ -23,7 +23,7 @@ function uploadVideo() {
 	                    quality : 100,
 	                    destinationType : Camera.DestinationType.FILE_URI,
 	                    sourceType : Camera.PictureSourceType.PHOTOLIBRARY,
-	                    mediaType: Camera.MediaType.VIDEO
+	                    mediaType: Camera.MediaType.VIDEO,
 	                    targetWidth: 500,
 	                    targetHeight: 500
 	            };
