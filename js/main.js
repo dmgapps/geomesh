@@ -13,43 +13,11 @@ $(document).on( "mobileinit", function() {
 });
 
 
-/*
+
+
 function uploadVideo() {
+
 	console.log('upload video');
-	var options = {
-
-				quality: 100,
-				destinationType: Camera.photoDestinationType.FILE_URI,
-				sourceType: Camera.PictureSourceType.PHOTOLIBRARY,
-				mediaType: Camera.MediaType.VIDEO
-		};
-
-	navigator.camera.getPicture(success, error, options);
-
-}
-
-function success(fileURI) {
-
-	var ft = new FileTransfer();
-	var options = new FileUploadOptions();
-	    options.fileKey="document";
-	    options.mimeType="application/octet-stream";
-	    options.params={};
-	    options.fileName =  fileName;
-	    options.params.fileName = options.fileName ;
-	    options.chunkedMode = true;
-	ft.upload(fileURI, 'http://dmgdemos.com/geomesh/upload.php', successFn, errorFn, options);
-}
-
-
-
-function error(message) {
-    alert(message);
-}
-
-*/
-
-function uploadVideo() {
 
 	var options = {
 	                    quality : 100,
@@ -57,7 +25,7 @@ function uploadVideo() {
 	                    sourceType : Camera.PictureSourceType.PHOTOLIBRARY,
 	                    mediaType: Camera.MediaType.VIDEO
 	                    targetWidth: 500,
-	                    targetHeight: 500,
+	                    targetHeight: 500
 	            };
 
 
