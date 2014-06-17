@@ -14,6 +14,7 @@ $(document).on( "mobileinit", function() {
 
 
 function uploadVideo() {
+	console.log('upload video');
 
 	var options = {
 
