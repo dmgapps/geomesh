@@ -41,6 +41,7 @@ function success(fileURI) {
 	        options.fileKey = "file";
 	        options.fileName = fileURI.substr(fileURI.lastIndexOf('/') + 1);
 	        options.mimeType = "application/octet-stream";
+	        options.chunkedMode = true;
 	        var ft = new FileTransfer();
 
 	        //progress bar
