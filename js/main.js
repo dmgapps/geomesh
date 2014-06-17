@@ -21,7 +21,7 @@ function uploadVideo() {
 				quality: 100,
 				destinationType: Camera.photoDestinationType.FILE_URI,
 				sourceType: Camera.PictureSourceType.PHOTOLIBRARY,
-				mediaType: Camera.fileMediaType.VIDEO
+				mediaType: Camera.MediaType.VIDEO
 		};
 
 	navigator.camera.getPicture(success, error, options);
