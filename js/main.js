@@ -42,6 +42,16 @@ function success(fileURI) {
 	        options.fileName = fileURI.substr(fileURI.lastIndexOf('/') + 1);
 	        options.mimeType = "application/octet-stream";
 	        var ft = new FileTransfer();
+
+	        //progress bar
+	        ft.onprogress = function(progressEvent) {
+
+	        	var perc = Math.floor(progressEvent.loaded / progressEvent.total * 100);
+	        	var html = perc + "%";
+	        	$("#status").html(html);
+	        		
+	        };
+
 	        ft.upload(fileURI, encodeURI('http://dmgdemos.com/geomesh/upload.php'), uploadSuccess, uploadFail, options);
 	}
 
