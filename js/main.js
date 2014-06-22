@@ -17,13 +17,11 @@ $(document).on( "mobileinit", function() {
 
 function uploadVideo() {
 
-	console.log('upload video');
-
 	var options = {
 	                    quality : 100,
 	                    destinationType : Camera.DestinationType.FILE_URI,
 	                    sourceType : Camera.PictureSourceType.PHOTOLIBRARY,
-	                    mediaType: Camera.MediaType.VIDEO,
+	                    mediaType: Camera.MediaType.ALLMEDIA,
 	                    targetWidth: 500,
 	                    targetHeight: 500
 	            };
@@ -59,7 +57,6 @@ function success(fileURI) {
 function fail(message) {
 	    console.log(message);
 }
-
 
 
 /* Upload callbacks */
